@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguoU6Ai083yipzLqclT6rEyARJIiqWcKjb4cN1_LHJyAUscOm0EYyMKit6tCNSp3G2qxIZxvhS96wgS1VdrsUGNTidYH-29BYimR-UU5_PWrklIDT1rNri98p3VrFvtoDLwX2kAYeSjfWzLGirvnto34LjIoMNmDsokb6y0y-kKnY8SIDmZCxj0wS5oQ/s1600/synthwave-car-ai-162023.png");
+  background-repeat: no-repeat;
+  
+}
