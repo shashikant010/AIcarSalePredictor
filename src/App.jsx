@@ -81,7 +81,7 @@ function App() {
         value={year}
         onChange={(e)=>setYear(e.target.value)}
         />
-        <label htmlFor="year" className="text-2xl font-bold">Present price</label>
+        <label htmlFor="year" className="text-2xl font-bold">Present price in lakhs</label>
         <input type="text" name="present-price" id="" placeholder="Present price" className="h-16 w-96 text-2xl p-4 border-gray-500 rounded-xl border-2 m-2"
         value={presentPrice}
         onChange={(e)=>setPresentPrice(e.target.value)}
