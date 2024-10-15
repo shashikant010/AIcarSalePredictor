@@ -11,7 +11,7 @@ function App() {
   const [transmissionType,setTransmissionType]=useState(0)
   const [loading,setLoading]=useState(false)
   const [predictedPrice,setPredictedPrice]=useState(100)
-  const [error,setError]=useState(null)
+  const [error,setError]=useState("")
   const [gotResult,setGotResult]=useState(false)
 
   const handleSubmit=async(e)=>{
@@ -167,7 +167,7 @@ function App() {
     <div className='h-1/2 w-1/2 bg-white rounded-2xl p-4 flex flex-col justify-center items-center'>
     <h1 className='text-3xl font-bold'>Yayy🥳🥳</h1>
     <h1 className='text-5xl font-bold'>Your predicted price is :</h1>
-    <h1 className='text-7xl font-bold m-6'>{predictedPrice} lakh Rs</h1>
+    <h1 className='text-5xl font-bold m-6 text-yellow-600'>{predictedPrice} lakh Rs</h1>
     <button className='text-white bg-lime-700 p-4 rounded-xl font-bold ' onClick={retry}>Predict more</button>
     </div>
   </div>
@@ -182,7 +182,7 @@ function App() {
       <div className='h-1/2 w-1/2 bg-white rounded-2xl p-4 flex flex-col justify-center items-center'>
       <h1 className='text-3xl font-bold'>Oopes there is a error 😥</h1>
       <h1 className='text-5xl font-bold'>Error :</h1>
-      <h1 className='text-7xl font-bold m-6 text-red-500'>{Error}</h1>
+      <h1 className='text-xl font-bold m-6 text-red-500'>{error.toString()}</h1>
       <button className='text-white bg-red-700 p-4 rounded-xl font-bold ' onClick={retry}>Retry</button>
       </div>
     </div>
