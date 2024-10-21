@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Car sale prediction</title>
+    <style>
+        body{
+            /* background-image: url("https://t3.ftcdn.net/jpg/06/35/19/68/360_F_635196816_cd0woJUxxq4X73EdHb1ns9jCGYDOhNOz.jpg");
+             */
+             background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguoU6Ai083yipzLqclT6rEyARJIiqWcKjb4cN1_LHJyAUscOm0EYyMKit6tCNSp3G2qxIZxvhS96wgS1VdrsUGNTidYH-29BYimR-UU5_PWrklIDT1rNri98p3VrFvtoDLwX2kAYeSjfWzLGirvnto34LjIoMNmDsokb6y0y-kKnY8SIDmZCxj0wS5oQ/s1600/synthwave-car-ai-162023.png");
+            background-size: cover;
+
+        }
+    </style>
+</head>
+<body class="flex justify-center items-center w-full h-screen">
+    <form action="post" class="border-black rounded-2xl border-4 w-1/3 mx-auto m-4 p-4 flex flex-col justify-center bg-white bg-opacity-70  form">
+        <h1 class="text-4xl font-bold text-center text-blue-800 m-2 font-serif mb-4">AI CAR SALE PRICE PREDICTOR</h1>
+        <label for="year" class="text-2xl font-bold">Enter year of car</label>
+        <input type="text" name="year" id="" placeholder="year" class="h-16 w-96 text-2xl p-4 border-gray-500 rounded-xl border-2 m-2">
+        <label for="year" class="text-2xl font-bold">Present price</label>
+        <input type="text" name="present-price" id="" placeholder="Present price" class="h-16 w-96 text-2xl p-4 border-gray-500 rounded-xl border-2 m-2">
+        <label for="km-driven" class="text-2xl font-bold">Enter how much your car is driven</label>
+        <input type="text" name="km-driven" id="" placeholder="km driven" class="h-16 w-96 text-2xl p-4 border-gray-500 rounded-xl border-2 m-2">
+
+        <label for="fuel" class="text-2xl font-bold">Select the fuel type</label>
+        <select name="fuel" id="fuel" class="h-12 w-80 m-4 font-bold text-xl border-2 border-black rounded text-green-600">
+            <option value="0" class="font-bold text-black">Petrol</option>
+            <option value="1" class="font-bold text-black">Diesel</option>
+            <option value="2" class="font-bold text-black">CNG</option>
+        </select> 
+
+        <label for="seller" class="text-2xl font-bold">Select the Seller type</label>
+        <select name="seller" id="seller" class="h-12 w-80 m-4 font-bold text-xl border-2 border-black rounded text-purple-600">
+            <option value="0" class="font-bold text-black">Dealer</option>
+            <option value="1" class="font-bold text-black">Individual</option>
+        </select>
+
+        <label for="transmission" class="text-2xl font-bold">Select the transmission type</label>
+        <select name="transmission" id="seller" class="h-12 w-80 m-4 font-bold text-xl border-2 border-black rounded text-purple-600">
+            <option value="0" class="font-bold text-black">Manual</option>
+            <option value="1" class="font-bold text-black">Automatic</option>
+        </select>
+
+        <div class="flex items-center justify-center ">
+            <div class="relative group">
+              <button
+                class="relative inline-block p-px font-semibold leading-6 text-white bg-gray-800 shadow-2xl cursor-pointer rounded-xl shadow-zinc-900 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95"
+                onclick="submitClick()"
+              >
+                <span
+                  class="absolute inset-0 rounded-xl bg-gradient-to-r from-teal-400 via-blue-500 to-purple-500 p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                ></span>
+          
+                <span class="relative z-10 block px-6 py-3 rounded-xl bg-gray-950">
+                  <div class="relative z-10 flex items-center space-x-2">
+                    <span class="transition-all duration-500 group-hover:translate-x-1"
+                      >GET YOUR CAR PRICE NOW !!    </span
+                    >
+                    <svg
+                      class="w-6 h-6 transition-transform duration-500 group-hover:translate-x-1"
+                      data-slot="icon"
+                      aria-hidden="true"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        clip-rule="evenodd"
+                        d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+                        fill-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                </span>
+              </button>
+            </div>
+          </div>
+          
+        
+    </form>
+</body>
+
+<script>
+    function submitClick(e){
+        e.preventDefault();
+        console.log(e+"hii")
+    }
+</script>
+</html>

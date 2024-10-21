@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {},
+    boxShadow: {
+      '3xl': '0 20px 100px -15px rgba(0, 0, 0, 0.3)',
+    }
   },
   plugins: [],
 }

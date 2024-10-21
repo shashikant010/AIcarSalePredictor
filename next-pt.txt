@@ -1,0 +1,7 @@
+linear regression + classification use cases
+
+different types of plots
+
+test train split ratio
+
+multiple linear regression 
