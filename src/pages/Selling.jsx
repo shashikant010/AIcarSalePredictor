@@ -77,26 +77,26 @@ function Selling() {
   <>
   {!loading&& !gotResult &&
   <main className="flex justify-center items-center w-full h-full">
-    <form action="post" className="border-black rounded-2xl border-4  w-1/2 mx-auto m-4 p-4 flex flex-col  bg-white bg-opacity-70 form items-start">
+    <form action="post" className="border-black rounded-2xl border-4  w-1/2 mx-auto m-4 p-4 flex flex-col  bg-white bg-opacity-70 form items-start shadow-white shadow-3xl">
         <h1 className="text-3xl font-bold text-center text-blue-800 m-2 font-serif mb-4">AI CAR SALE PRICE PREDICTOR</h1>
         <label htmlFor="year" className="text-2xl font-bold">Enter year of car</label>
-        <input type="text" name="year" id="" placeholder="year" className="h-16 w-96 text-2xl p-4 border-gray-500 rounded-xl border-2 m-2"
+        <input type="text" name="year" id="" placeholder="Year" className="h-8  w-96 text-2xl p-4 border-gray-500 rounded-xl border-2 m-2 "
         value={year}
         onChange={(e)=>setYear(e.target.value)}
         />
         <label htmlFor="year" className="text-2xl font-bold">Present price in lakhs</label>
-        <input type="text" name="present-price" id="" placeholder="Present price" className="h-16 w-96 text-2xl p-4 border-gray-500 rounded-xl border-2 m-2"
+        <input type="text" name="present-price" id="" placeholder="Present price" className="h-8 w-96 text-2xl p-4 border-gray-500 rounded-xl border-2 m-2"
         value={presentPrice}
         onChange={(e)=>setPresentPrice(e.target.value)}
         />
         <label htmlFor="km-driven" className="text-2xl font-bold">Enter how much your car is driven</label>
-        <input type="text" name="km-driven" id="" placeholder="km driven" className="h-16 w-96 text-2xl p-4 border-gray-500 rounded-xl border-2 m-2"
+        <input type="text" name="km-driven" id="" placeholder="km driven" className="h-8 w-96 text-2xl p-4 border-gray-500 rounded-xl border-2 m-2"
         value={kmDriven}
         onChange={(e)=>SetKmDriven(e.target.value)}
         />
 
         <label htmlFor="fuel" className="text-2xl font-bold">Select the fuel type</label>
-        <select name="fuel" id="fuel" className="h-12 w-80 m-4 font-bold text-xl border-2 border-black rounded text-green-600" 
+        <select name="fuel" id="fuel" className="h-8 w-80 m-4 font-bold text-xl border-2 border-black rounded text-green-600" 
         value={fuelType}
         onChange={(e)=>setFuelType(e.target.value)}
         >
@@ -106,7 +106,7 @@ function Selling() {
         </select> 
 
         <label htmlFor="seller" className="text-2xl font-bold">Select the Seller type</label>
-        <select name="seller" id="seller" className="h-12 w-80 m-4 font-bold text-xl border-2 border-black rounded text-purple-600"
+        <select name="seller" id="seller" className="h-8 w-80 m-4 font-bold text-xl border-2 border-black rounded text-purple-600"
         value={sellerType}
         onChange={(e)=>setSellerType(e.target.value)}
         >
@@ -115,7 +115,7 @@ function Selling() {
         </select>
 
         <label htmlFor="transmission" className="text-2xl font-bold">Select the transmission type</label>
-        <select name="transmission" id="seller" className="h-12 w-80 m-4 font-bold text-xl border-2 border-black rounded text-purple-600"
+        <select name="transmission" id="seller" className="h-8 w-80 m-4 font-bold text-xl border-2 border-black rounded text-purple-600"
         value={transmissionType}  
         onChange={(e)=>setTransmissionType(e.target.value)}
         >
